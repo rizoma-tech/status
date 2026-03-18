@@ -40,7 +40,7 @@ sites:
       - 200
 
 status-website:
-  baseUrl: /status
+  cname: status.rizoma-tech.com
   logoUrl: https://rizoma-tech.com/rizoma-r-logo.png
   name: Rizoma Status
   introTitle: "**Rizoma Technologies** system status"
