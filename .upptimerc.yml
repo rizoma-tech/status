@@ -29,12 +29,9 @@ sites:
       - 200
 
   - name: Supabase API
-    url: https://nyycthkytriprrdlnlsj.supabase.co/rest/v1/
-    headers:
-      apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im55eWN0aGt5dHJpcHJyZGxubHNqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjkxMjgxMzMsImV4cCI6MjA0NDcwNDEzM30.placeholder
+    url: https://nyycthkytriprrdlnlsj.supabase.co/auth/v1/health
     expectedStatusCodes:
       - 200
-      - 401
 
   - name: walt.id Issuer API
     url: https://issuer.id.rizoma-tech.com/.well-known/openid-credential-issuer
@@ -51,7 +48,7 @@ status-website:
   logoUrl: https://rizoma-tech.com/rizoma-r-logo.png
   name: Rizoma Status
   introTitle: "**Rizoma Technologies** system status"
-  introMessage: This page shows real-time availability of all Rizoma services. Checks run every 5 minutes. [Subscribe to updates](https://github.com/rizoma-tech/status/issues) via GitHub Issues.
+  introMessage: This page shows real-time availability of all Rizoma services. Checks run every 5 minutes.
   theme: light
   navbar:
     - title: Homepage
@@ -60,11 +57,6 @@ status-website:
       href: https://gdpr-scan.rizoma-tech.com
     - title: GitHub
       href: https://github.com/rizoma-tech
-
-i18n:
-  activeIncidents: Active incidents
-  allSystemsOperational: All systems operational
-  incidentReport: Incident report
 
 workflowSchedule:
   uptime: "*/5 * * * *"
