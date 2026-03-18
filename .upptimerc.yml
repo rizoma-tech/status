@@ -35,7 +35,7 @@ sites:
       - 200
 
   - name: Credential Verifier Service
-    url: https://verifier.id.rizoma-tech.com/draft13/.well-known/openid-configuration
+    url: https://verifier.id.rizoma-tech.com/openid4vc/policy-list
     expectedStatusCodes:
       - 200
 
