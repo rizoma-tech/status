@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: upptime/status-page@v1.17.11
+      - uses: upptime/status-page@v1.17.0
         with:
           token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
