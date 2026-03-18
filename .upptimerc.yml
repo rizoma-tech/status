@@ -28,10 +28,6 @@ sites:
     expectedStatusCodes:
       - 200
 
-  - name: Database (Supabase)
-    url: https://nyycthkytriprrdlnlsj.supabase.co/auth/v1/health
-    expectedStatusCodes:
-      - 200
 
   - name: Credential Issuer Service
     url: https://issuer.id.rizoma-tech.com/.well-known/openid-credential-issuer
