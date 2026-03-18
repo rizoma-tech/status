@@ -1,0 +1,73 @@
+owner: rizoma-tech
+repo: status
+
+sites:
+  - name: API (rizoma-api)
+    url: https://api.id.rizoma-tech.com/health
+    expectedStatusCodes:
+      - 200
+
+  - name: Portal (id.rizoma-tech.com)
+    url: https://id.rizoma-tech.com
+    expectedStatusCodes:
+      - 200
+      - 301
+
+  - name: GDPR Scanner
+    url: https://gdpr-scan.rizoma-tech.com
+    expectedStatusCodes:
+      - 200
+
+  - name: Landing (rizoma-tech.com)
+    url: https://rizoma-tech.com
+    expectedStatusCodes:
+      - 200
+
+  - name: Yalla Partners
+    url: https://yalla.partners
+    expectedStatusCodes:
+      - 200
+
+  - name: Supabase API
+    url: https://nyycthkytriprrdlnlsj.supabase.co/rest/v1/
+    headers:
+      apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im55eWN0aGt5dHJpcHJyZGxubHNqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjkxMjgxMzMsImV4cCI6MjA0NDcwNDEzM30.placeholder
+    expectedStatusCodes:
+      - 200
+      - 401
+
+  - name: walt.id Issuer API
+    url: https://issuer.id.rizoma-tech.com/.well-known/openid-credential-issuer
+    expectedStatusCodes:
+      - 200
+
+  - name: walt.id Verifier API
+    url: https://verifier.id.rizoma-tech.com/.well-known/openid-configuration
+    expectedStatusCodes:
+      - 200
+
+status-website:
+  cname: status.rizoma-tech.com
+  logoUrl: https://rizoma-tech.com/rizoma-r-logo.png
+  name: Rizoma Status
+  introTitle: "**Rizoma Technologies** system status"
+  introMessage: This page shows real-time availability of all Rizoma services. Checks run every 5 minutes. [Subscribe to updates](https://github.com/rizoma-tech/status/issues) via GitHub Issues.
+  theme: light
+  navbar:
+    - title: Homepage
+      href: https://rizoma-tech.com
+    - title: GDPR Scanner
+      href: https://gdpr-scan.rizoma-tech.com
+    - title: GitHub
+      href: https://github.com/rizoma-tech
+
+i18n:
+  activeIncidents: Active incidents
+  allSystemsOperational: All systems operational
+  incidentReport: Incident report
+
+workflowSchedule:
+  uptime: "*/5 * * * *"
+  graphs: "0 */6 * * *"
+  staticSite: "0 */12 * * *"
+  summary: "0 0 * * *"
