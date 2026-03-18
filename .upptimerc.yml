@@ -2,12 +2,12 @@ owner: rizoma-tech
 repo: status
 
 sites:
-  - name: API (rizoma-api)
+  - name: API Gateway
     url: https://api.id.rizoma-tech.com/health
     expectedStatusCodes:
       - 200
 
-  - name: Portal (id.rizoma-tech.com)
+  - name: Issuer Portal
     url: https://id.rizoma-tech.com
     expectedStatusCodes:
       - 200
@@ -18,7 +18,7 @@ sites:
     expectedStatusCodes:
       - 200
 
-  - name: Landing (rizoma-tech.com)
+  - name: Landing Page
     url: https://rizoma-tech.com
     expectedStatusCodes:
       - 200
@@ -28,35 +28,33 @@ sites:
     expectedStatusCodes:
       - 200
 
-  - name: Supabase API
+  - name: Database (Supabase)
     url: https://nyycthkytriprrdlnlsj.supabase.co/auth/v1/health
     expectedStatusCodes:
       - 200
 
-  - name: walt.id Issuer API
+  - name: Credential Issuer Service
     url: https://issuer.id.rizoma-tech.com/.well-known/openid-credential-issuer
     expectedStatusCodes:
       - 200
 
-  - name: walt.id Verifier API
+  - name: Credential Verifier Service
     url: https://verifier.id.rizoma-tech.com/.well-known/openid-configuration
     expectedStatusCodes:
       - 200
 
 status-website:
-  cname: status.rizoma-tech.com
+  baseUrl: /status
   logoUrl: https://rizoma-tech.com/rizoma-r-logo.png
   name: Rizoma Status
   introTitle: "**Rizoma Technologies** system status"
-  introMessage: This page shows real-time availability of all Rizoma services. Checks run every 5 minutes.
+  introMessage: Real-time availability of all Rizoma services. Checks run every 5 minutes.
   theme: light
   navbar:
     - title: Homepage
       href: https://rizoma-tech.com
     - title: GDPR Scanner
       href: https://gdpr-scan.rizoma-tech.com
-    - title: GitHub
-      href: https://github.com/rizoma-tech
 
 workflowSchedule:
   uptime: "*/5 * * * *"
