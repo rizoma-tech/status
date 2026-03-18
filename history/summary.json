@@ -109,20 +109,20 @@
   },
   {
     "name": "Credential Verifier Service",
-    "url": "https://verifier.id.rizoma-tech.com/draft13/.well-known/openid-configuration",
+    "url": "https://verifier.id.rizoma-tech.com/openid4vc/policy-list",
     "icon": "https://icons.duckduckgo.com/ip3/verifier.id.rizoma-tech.com.ico",
     "slug": "credential-verifier-service",
-    "status": "down",
+    "status": "up",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 488,
-    "timeDay": 488,
-    "timeWeek": 488,
-    "timeMonth": 488,
-    "timeYear": 488,
+    "time": 500,
+    "timeDay": 500,
+    "timeWeek": 500,
+    "timeMonth": 500,
+    "timeYear": 500,
     "dailyMinutesDown": {}
   }
 ]
