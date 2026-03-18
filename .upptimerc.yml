@@ -57,3 +57,6 @@ workflowSchedule:
   graphs: "0 */6 * * *"
   staticSite: "0 */12 * * *"
   summary: "0 0 * * *"
+
+i18n:
+  footer: " "
