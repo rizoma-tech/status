@@ -30,12 +30,12 @@ sites:
 
 
   - name: Credential Issuer Service
-    url: https://issuer.id.rizoma-tech.com/.well-known/openid-credential-issuer
+    url: https://issuer.id.rizoma-tech.com/draft13/.well-known/openid-credential-issuer
     expectedStatusCodes:
       - 200
 
   - name: Credential Verifier Service
-    url: https://verifier.id.rizoma-tech.com/.well-known/openid-configuration
+    url: https://verifier.id.rizoma-tech.com/draft13/.well-known/openid-configuration
     expectedStatusCodes:
       - 200
 
