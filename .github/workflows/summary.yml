@@ -9,6 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: upptime/uptime-monitor@v1.41.0
+        env:
+          GH_PAT: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
         with:
           command: summary
-          token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
